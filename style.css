@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body {
+  font-family: "Heebo", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (max-width: 425px) {
+  .container {
+    max-width: 320px;
+  }
+  .nav-header {
+    display: none !important;
+  }
+  .nav-mobile {
+    display: flex !important;
+  }
+  .judul {
+    width: 320px !important;
+    height: 620px !important;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 33px !important;
+    gap: 34px !important;
+  }
+  .image-judul {
+    width: 180px !important;
+    height: 180px !important;
+    order: 1 !important;
+    margin-left: 64px !important;
+  }
+  .image-judul img {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  .text-judul {
+    order: 2 !important;
+    width: 312px !important;
+    height: 120px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-judul h1 {
+    margin-top: 34px !important;
+    text-align: center;
+    font-weight: bold;
+  }
+  .text-judul p {
+    margin-top: 21px !important ;
+    margin-bottom: 27px !important;
+    text-align: center;
+  }
+  .text-judul button {
+    width: 208px !important;
+    height: 47px !important;
+  }
+  #header {
+    margin-bottom: 59px !important;
+  }
+  .wrapper-recent {
+    width: 100% !important;
+  }
+  .recent-header {
+    width: 100% !important;
+  }
+  .recent-header h3 {
+    margin: auto;
+    font-size: 14px !important;
+  }
+  .recent-header h4 {
+    display: none;
+  }
+  .container-recent {
+    width: 210px !important;
+    height: 450px !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-recent {
+    width: 254px !important;
+    height: 200px !important;
+  }
+  .box-recent h2 {
+    font-size: 16px !important;
+  }
+  .date-recent {
+    width: 250px !important;
+    height: 22px !important;
+    font-size: 11px !important;
+    gap: 11px !important;
+    margin-top: 12px !important;
+  }
+  .txt-recent {
+    font-size: 10px !important;
+  }
+  .featured-works {
+    width: 320px !important;
+    height: 1500px !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .featured-works h3 {
+    text-align: center;
+    font-size: 14px !important;
+  }
+  .container-featured {
+    width: 320px !important;
+    height: 450px !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-featured img {
+    width: 90%;
+  }
+  .judul-featured {
+    font-size: 16px !important;
+    font-weight: bold;
+  }
+  .history {
+    margin-left: 0 !important;
+  }
+  html {
+    font-size: 7px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .judul {
+    max-width: 720px;
+    padding: 30px;
+  }
+  .text-judul {
+    max-width: 320px;
+  }
+  .text-judul h1 {
+    font-size: 32px !important;
+  }
+  .text-judul p {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    font-size: 11px !important;
+  }
+  .image-judul img {
+    width: 183px !important;
+    height: 183px !important;
+  }
+  .recent-header {
+    height: 40px !important;
+  }
+  .recent-header h3 {
+    font-size: 20px !important;
+  }
+  .container-recent {
+    width: 720px !important;
+  }
+  .box-recent {
+    width: 308px !important;
+  }
+  .box-recent h2 {
+    font-size: 25px;
+  }
+  .featured-works {
+    width: 720px !important;
+  }
+  .featured-works h3 {
+    font-size: 20px !important;
+  }
+  .container-featured {
+    width: 720px !important;
+    gap: 11px !important;
+    padding-bottom: 22px !important;
+  }
+  .judul-featured {
+    font-size: 26px !important;
+  }
+  .history {
+    margin: 20px !important;
+  }
+
+  html {
+    font-size: 8px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .box-recent {
+    width: 412px !important;
+  }
+  html {
+    font-size: 9px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  html {
+    font-size: 10px;
+  }
+}
+.nav-header {
+  margin-top: 27px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  gap: 20px;
+}
+a {
+  color: #000;
+  text-align: right;
+  font-family: Heebo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+.nav-mobile {
+  display: none;
+  justify-content: flex-end;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 18px;
+  padding-bottom: 12px;
+}
+.judul {
+  display: flex;
+  width: 885px;
+  height: 314px;
+  margin: auto;
+  margin-top: 210px;
+  gap: 106px;
+  margin-bottom: 71px;
+}
+.text-judul {
+  width: 506px;
+  height: 296px;
+  order: 1;
+}
+.text-judul h1 {
+  font-family: "Heebo";
+  font-size: 44px;
+  font-weight: bold;
+}
+.text-judul p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Heebo";
+  font-size: 16px;
+  line-height: auto;
+}
+.text-judul button {
+  width: 208px;
+  height: 47px;
+  background-color: #ff6464;
+  color: #fff;
+  padding: 13px 20px;
+}
+.image-judul {
+  width: 243px;
+  height: 243px;
+  order: 2;
+}
+.image-judul img {
+  width: 243px;
+  height: 243px;
+}
+#recent-post {
+}
+.wrapper-recent {
+  width: 90%;
+  height: 100%;
+  background-color: #edf7fa;
+  margin: auto;
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+}
+.recent-header {
+  width: 90%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.recent-header h3 {
+  font-family: "Heebo";
+  font-size: 22px;
+}
+.recent-header h4 {
+  font-family: "Heebo";
+  font-size: 16px;
+  color: #00a8cc;
+}
+.container-recent {
+  width: 856px;
+  height: 295px;
+  display: flex;
+  margin: auto;
+  gap: 20px;
+}
+.box-recent {
+  width: 418px;
+  height: 295px;
+  padding: 24px 23px;
+  background-color: #fff;
+}
+.box-recent h2 {
+  font-family: "Heebo";
+  font-size: 26px;
+  font-weight: bold;
+}
+.date-recent {
+  display: flex;
+  width: 395px;
+  height: 34px;
+  gap: 20px;
+  font-size: 18px;
+}
+.data-recent p {
+  font-family: "Heebo";
+  font-size: 18px;
+}
+.txt-recent {
+  font-family: "Heebo";
+  font-size: 16px;
+}
+.featured-works {
+  width: 858px;
+  height: 770px;
+  margin: auto;
+}
+.featured-works h3 {
+  font-family: "Heebo";
+  font-size: 22px;
+  margin-bottom: 22px;
+}
+.container-featured {
+  width: 858px;
+  height: 206px;
+  display: flex;
+  gap: 18px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.judul-featured {
+  font-family: "Heebo";
+  font-size: 30px;
+  font-weight: bolder;
+}
+.history {
+  display: flex;
+  gap: 26px;
+  margin: 26px;
+}
+.tgl-history {
+  font-family: "Heebo";
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #142850;
+  padding: 0 10px;
+  border-radius: 100px;
+}
+.label-history {
+  font-family: "Heebo";
+  font-size: 20px;
+  color: #8695a4;
+}
+.text-featured {
+  font-family: "Heebo";
+  font-size: 16px;
+}
+
+.gap {
+  width: 858px;
+  height: 31px;
+}
+.footer {
+  width: 1152;
+  height: 1859;
+}
+.sosmed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 26px;
+}
+.Copyright {
+  font-family: "Heebo";
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 54px;
+}
